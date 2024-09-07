@@ -6,7 +6,7 @@ import './App.css';
 
 const App = () => {
   return <section className='h-full w-full flex'>
-    <div className='place-self-center text-center text-3xl'>
+    <div className='place-self-center text-center text-3xl w-full'>
       Under Construction
     </div>
   </section>
