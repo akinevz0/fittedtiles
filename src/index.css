@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  @apply h-screen w-screen;
+}
+
+#root {
+  @apply min-h-full max-h-full w-full h-full;
+}

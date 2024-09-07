@@ -1,0 +1,50 @@
+#root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* elements have padding */
+#SideBar, #BottomBar, #RenderingSection {
+  @apply p-4;
+}
+
+/* bars have colour */
+#SideBar, #BottomBar {
+  @apply bg-slate-800;
+}
+
+/* sections have colour */
+section {
+  @apply rounded-md;
+}
+
+section, #root {
+  @apply bg-slate-800 text-yellow-100;
+}
+
+#MainSection {
+  @apply bg-slate-800;
+}
+
+#RenderingSection {
+  @apply bg-slate-600 rounded-t-none rounded-r-none;
+}
+
+/* links */
+a {
+  @apply m-8 p-2 rounded-xl transition duration-200;
+  @apply bg-slate-700 dark:bg-slate-300;
+}
+
+a:hover {
+  @apply bg-slate-300 dark:bg-slate-700;
+}
+
