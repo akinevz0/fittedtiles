@@ -1,0 +1,31 @@
+div.card {
+    @apply max-w-sm rounded overflow-hidden shadow-lg bg-slate-100;
+}
+
+#BottomBar>.card{
+    @apply mr-4;
+}
+
+#SideBar>.card{
+    @apply mb-4;
+}
+
+.card>div {
+    @apply px-6 py-4;
+}
+
+.card>div>.title{
+    @apply font-bold text-base mb-2 capitalize;
+}
+
+.card>div>.content{
+    @apply text-gray-700 text-xs;
+}
+
+.card input {
+    @apply mt-2 mr-2 bg-slate-200;
+}
+
+.card label {
+    @apply mt-2 float-right;
+}

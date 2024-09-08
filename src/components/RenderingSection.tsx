@@ -1,13 +1,13 @@
+import { ReactNode } from 'react'
 import './RenderingSection.css'
 
-interface RenderingSectionProps {
-    childNodes?: React.ReactNode[]
+interface Props {
+    children?: React.ReactNode[]
 }
 
-export default function RenderingSection({ childNodes }: RenderingSectionProps) {
+export default function RenderingSection({ children }: Props): ReactNode {
 
     return <section id="RenderingSection">
-        rendering section
-        {childNodes}
+        {children}
     </section>
 }

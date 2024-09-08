@@ -11,31 +11,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* elements have padding */
-#SideBar, #BottomBar, #RenderingSection {
-  @apply p-4;
+/* colour */
+#root, #SideBar, #BottomBar, #MainSection {
+  @apply bg-slate-600;
 }
 
-/* bars have colour */
-#SideBar, #BottomBar {
-  @apply bg-slate-800;
+#RenderingSection {
+  @apply bg-slate-50 shadow-lg rounded-t-none rounded-r-none;
 }
 
-/* sections have colour */
 section {
   @apply rounded-md;
 }
 
-section, #root {
-  @apply bg-slate-800 text-yellow-100;
-}
-
-#MainSection {
-  @apply bg-slate-800;
-}
-
-#RenderingSection {
-  @apply bg-slate-600 rounded-t-none rounded-r-none;
+/* elements have padding */
+#SideBar, #BottomBar, #RenderingSection {
+  @apply p-4;
 }
 
 /* links */

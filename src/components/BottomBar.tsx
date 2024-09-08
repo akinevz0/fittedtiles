@@ -1,13 +1,12 @@
+import { ReactNode } from 'react'
 import './BottomBar.css'
 
-interface BottomBarProps {
-    childNodes?: React.ReactNode[]
+interface Props {
+    children?: React.ReactNode[]
 }
 
-export default function BottomBar({ childNodes }: BottomBarProps) {
-
+export default function BottomBar({ children }: Props): ReactNode {
     return <section id='BottomBar'>
-        bottom bar
-        {childNodes}
+        {children}
     </section>
 }

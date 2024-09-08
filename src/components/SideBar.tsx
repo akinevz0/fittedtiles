@@ -1,13 +1,13 @@
+import { ReactNode } from 'react'
 import './SideBar.css'
 
-interface SideBarProps {
-    childNodes?: React.ReactNode[]
+interface Props {
+    children?: ReactNode[] | ReactNode
 }
 
-export default function SideBar({ childNodes }: SideBarProps) {
+export default function SideBar({ children }: Props): ReactNode {
 
     return <section id="SideBar">
-        sidebar
-        {childNodes}
+        {children}
     </section>
 }
